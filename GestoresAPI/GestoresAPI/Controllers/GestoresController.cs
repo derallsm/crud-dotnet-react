@@ -22,7 +22,7 @@ namespace GestoresAPI.Controllers
 
         [HttpGet]
         public ActionResult Get() {
-           try {
+           try  {
                 return Ok(_context.gestores.ToList());
            } catch (Exception ex) {
                 // return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
